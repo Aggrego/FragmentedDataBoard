@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace Aggrego\ShardDataBoard\Board\Shard;
 
+use Aggrego\Domain\Profile\Profile;
 use Aggrego\ShardDataBoard\Board\Exception\InvalidUuidComparisonOnReplaceException;
 use ArrayIterator;
 use Assert\Assertion;
@@ -67,5 +68,16 @@ class Collection implements Countable, IteratorAggregate
     public function getIterator(): Iterator
     {
         return new ArrayIterator($this->list);
+    }
+
+    public function findAllByProfile(Profile $profile): Iterator
+    {
+        $list = [];
+        foreach ($this->list as $item) {
+            if ($item->getProfile()->equal($profile)) {
+                $list[] = $item;
+            }
+        }
+        return new ArrayIterator($list);
     }
 }
