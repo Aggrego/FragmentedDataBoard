@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\ShardDataBoard\Board\Prototype\Shard;
+namespace Aggrego\FragmentedDataBoard\Board\Prototype\Shard;
 
 use Aggrego\Domain\Board\Key;
 use Aggrego\Domain\Profile\Profile;

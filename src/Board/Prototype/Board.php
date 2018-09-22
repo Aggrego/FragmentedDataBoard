@@ -2,14 +2,14 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\ShardDataBoard\Board\Prototype;
+namespace Aggrego\FragmentedDataBoard\Board\Prototype;
 
-use Aggrego\ShardDataBoard\Board\Metadata;
-use Aggrego\ShardDataBoard\Board\Prototype\Shard\Collection;
-use Aggrego\ShardDataBoard\Board\Prototype\Shard\Item;
-use Aggrego\ShardDataBoard\Board\Shard\Collection as ShardsCollection;
-use Aggrego\ShardDataBoard\Board\Shard\InitialItem;
-use Aggrego\ShardDataBoard\Board\State;
+use Aggrego\FragmentedDataBoard\Board\Metadata;
+use Aggrego\FragmentedDataBoard\Board\Prototype\Shard\Collection;
+use Aggrego\FragmentedDataBoard\Board\Prototype\Shard\Item;
+use Aggrego\FragmentedDataBoard\Board\Shard\Collection as ShardsCollection;
+use Aggrego\FragmentedDataBoard\Board\Shard\InitialItem;
+use Aggrego\FragmentedDataBoard\Board\State;
 use Aggrego\Domain\Board\Key;
 use Aggrego\Domain\Board\Metadata as DomainMetadata;
 use Aggrego\Domain\Board\Prototype\Board as BoardInterface;

@@ -2,21 +2,21 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\ShardDataBoard\Board;
+namespace Aggrego\FragmentedDataBoard\Board;
 
 use Aggrego\Domain\Board\Board as DomainBoard;
 use Aggrego\Domain\Board\Uuid;
 use Aggrego\EventStore\Shared\Event\Model\TraitAggregate;
 use Aggrego\EventStore\Uuid as EventStoreUuid;
-use Aggrego\ShardDataBoard\Board\Events\BoardCreatedEvent;
-use Aggrego\ShardDataBoard\Board\Events\ShardAddedEvent;
-use Aggrego\ShardDataBoard\Board\Events\ShardUpdatedEvent;
-use Aggrego\ShardDataBoard\Board\Events\UpdatedLastStepsShardEvent;
-use Aggrego\ShardDataBoard\Board\Exception\UnprocessableBoardException;
-use Aggrego\ShardDataBoard\Board\Shard\FinalItem;
+use Aggrego\FragmentedDataBoard\Board\Events\BoardCreatedEvent;
+use Aggrego\FragmentedDataBoard\Board\Events\ShardAddedEvent;
+use Aggrego\FragmentedDataBoard\Board\Events\ShardUpdatedEvent;
+use Aggrego\FragmentedDataBoard\Board\Events\UpdatedLastStepsShardEvent;
+use Aggrego\FragmentedDataBoard\Board\Exception\UnprocessableBoardException;
+use Aggrego\FragmentedDataBoard\Board\Shard\FinalItem;
 use Aggrego\Domain\Board\Key;
 use Aggrego\Domain\Profile\Profile;
-use Aggrego\ShardDataBoard\Board\Shard\Uuid as ShardUuid;
+use Aggrego\FragmentedDataBoard\Board\Shard\Uuid as ShardUuid;
 
 class Board implements DomainBoard
 {

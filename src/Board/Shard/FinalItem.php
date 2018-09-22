@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\ShardDataBoard\Board\Shard;
+namespace Aggrego\FragmentedDataBoard\Board\Shard;
 
-use Aggrego\ShardDataBoard\Board\Data;
+use Aggrego\FragmentedDataBoard\Board\Data;
 use Aggrego\Domain\Profile\Profile;
 
 class FinalItem extends Item

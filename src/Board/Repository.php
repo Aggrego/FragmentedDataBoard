@@ -2,10 +2,10 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\ShardDataBoard\Board;
+namespace Aggrego\FragmentedDataBoard\Board;
 
 use Aggrego\Domain\Board\Uuid;
-use Aggrego\ShardDataBoard\Board\Exception\BoardNotFoundException;
+use Aggrego\FragmentedDataBoard\Board\Exception\BoardNotFoundException;
 
 interface Repository
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\ShardDataBoard\Board;
+namespace Aggrego\FragmentedDataBoard\Board;
 
 use TimiTao\ValueObject\Utils\StringValueObject;
 

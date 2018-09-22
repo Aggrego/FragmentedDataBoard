@@ -2,10 +2,10 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\ShardDataBoard\Board\Shard;
+namespace Aggrego\FragmentedDataBoard\Board\Shard;
 
 use Aggrego\Domain\Profile\Profile;
-use Aggrego\ShardDataBoard\Board\Exception\InvalidUuidComparisonOnReplaceException;
+use Aggrego\FragmentedDataBoard\Board\Exception\InvalidUuidComparisonOnReplaceException;
 use ArrayIterator;
 use Assert\Assertion;
 use Countable;

@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\Domain\Api\Domain\Command\UpdateBoard;
+namespace Aggrego\FragmentedDataBoard\Api\Domain\Command\UpdateBoard;
 
-use Aggrego\ShardDataBoard\Board\Repository;
+use Aggrego\FragmentedDataBoard\Board\Repository;
 
 class UseCase
 {

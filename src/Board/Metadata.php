@@ -2,10 +2,10 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\ShardDataBoard\Board;
+namespace Aggrego\FragmentedDataBoard\Board;
 
-use Aggrego\ShardDataBoard\Board\Shard\Collection;
-use Aggrego\ShardDataBoard\Board\Shard\FinalItem;
+use Aggrego\FragmentedDataBoard\Board\Shard\Collection;
+use Aggrego\FragmentedDataBoard\Board\Shard\FinalItem;
 use Aggrego\Domain\Board\Metadata as DomainMetadata;
 
 class Metadata implements DomainMetadata

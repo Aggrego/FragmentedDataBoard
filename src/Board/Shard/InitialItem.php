@@ -1,6 +1,6 @@
 <?php
 
-namespace Aggrego\ShardDataBoard\Board\Shard;
+namespace Aggrego\FragmentedDataBoard\Board\Shard;
 
 use Aggrego\Domain\Board\Key;
 use Aggrego\Domain\Profile\Profile;

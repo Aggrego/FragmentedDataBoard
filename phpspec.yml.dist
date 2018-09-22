@@ -1,4 +1,4 @@
 suites:
   default:
-    namespace: Aggrego\ShardDataBoard
-    psr4_prefix: Aggrego\ShardDataBoard
+    namespace: Aggrego\FragmentedDataBoard
+    psr4_prefix: Aggrego\FragmentedDataBoard

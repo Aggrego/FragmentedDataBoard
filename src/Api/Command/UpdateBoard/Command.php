@@ -2,12 +2,12 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\Domain\Api\Domain\Command\UpdateBoard;
+namespace Aggrego\FragmentedDataBoard\Api\Domain\Command\UpdateBoard;
 
 use Aggrego\Domain\Board\Uuid as BoardUuid;
 use Aggrego\Domain\Profile\Profile;
-use Aggrego\ShardDataBoard\Board\Data;
-use Aggrego\ShardDataBoard\Board\Shard\Uuid as ShardUuid;
+use Aggrego\FragmentedDataBoard\Board\Data;
+use Aggrego\FragmentedDataBoard\Board\Shard\Uuid as ShardUuid;
 
 class Command
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\ShardDataBoard\Board\Prototype\Shard;
+namespace Aggrego\FragmentedDataBoard\Board\Prototype\Shard;
 
 use ArrayIterator;
 use Assert\Assertion;

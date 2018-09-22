@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\ShardDataBoard\Board\Events;
+namespace Aggrego\FragmentedDataBoard\Board\Events;
 
 use Aggrego\Domain\Board\Key;
 use Aggrego\Domain\Profile\Profile;

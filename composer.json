@@ -1,5 +1,5 @@
 {
-  "name": "aggrego/shard-data-board",
+  "name": "aggrego/fragmented-data-board",
   "type": "domain",
   "description": "",
   "minimum-stability": "dev",
@@ -23,7 +23,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Aggrego\\ShardDataBoard\\": "src/"
+      "Aggrego\\FragmentedDataBoard\\": "src/"
     }
   }
 }

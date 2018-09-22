@@ -2,7 +2,7 @@
 
 namespace Aggrego\Domain\Api\Domain\Command\UpdateBoard\Exception;
 
-use Aggrego\Domain\Shared\Exception\InvalidArgumentException;
+use Aggrego\FragmentedDataBoard\Shared\Exception\InvalidArgumentException;
 
 class InvalidCommandDataException extends InvalidArgumentException
 {

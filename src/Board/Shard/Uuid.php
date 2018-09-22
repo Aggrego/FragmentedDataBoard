@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\ShardDataBoard\Board\Shard;
+namespace Aggrego\FragmentedDataBoard\Board\Shard;
 
 use Aggrego\Domain\Shared\ValueObject\Uuid as SharedUuid;
 

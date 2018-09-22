@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Aggrego\ShardDataBoard\Board\Exception;
+namespace Aggrego\FragmentedDataBoard\Board\Exception;
 
 use Aggrego\Domain\Shared\Exception\RuntimeException;
 
