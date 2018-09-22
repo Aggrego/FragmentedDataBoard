@@ -1,6 +1,6 @@
-[![License](https://poser.pugx.org/aggrego/fragmented-data-boardlicense.svg)](https://packagist.org/packages/aggrego/domain)
-[![Latest Stable Version](https://poser.pugx.org/aggrego/fragmented-data-boardv/stable.svg)](https://packagist.org/packages/aggrego/domain)
-[![Total Downloads](https://poser.pugx.org/aggrego/fragmented-data-boarddownloads.svg)](https://packagist.org/packages/aggrego/domain)
+[![License](https://poser.pugx.org/aggrego/fragmented-data-board/license.svg)](https://packagist.org/packages/aggrego/fragmented-data-board)
+[![Latest Stable Version](https://poser.pugx.org/aggrego/fragmented-data-boardv/stable.svg)](https://packagist.org/packages/aggrego/fragmented-data-board)
+[![Total Downloads](https://poser.pugx.org/aggrego/fragmented-data-boarddownloads.svg)](https://packagist.org/packages/aggrego/fragmented-data-board)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/aggrego/fragmented-data-boardbadges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/aggrego/fragmented-data-board?branch=master)
 
 ### Aggrego
