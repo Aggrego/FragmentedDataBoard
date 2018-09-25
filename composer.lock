@@ -9,11 +9,16 @@
         {
             "name": "aggrego/aggregate-event-consumer",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Aggrego/AggregateEventConsumer.git",
+                "reference": "a59cdc2d522b91c476f5edfbc65c13c89be90757"
+            },
             "dist": {
-                "type": "path",
-                "url": "/app/AggregateEventConsumer",
-                "reference": "836224ead9c8c6753eb90238ffff3faa3153ce48",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/Aggrego/AggregateEventConsumer/zipball/a59cdc2d522b91c476f5edfbc65c13c89be90757",
+                "reference": "a59cdc2d522b91c476f5edfbc65c13c89be90757",
+                "shasum": ""
             },
             "require": {
                 "aggrego/event-consumer": "dev-master",
@@ -32,6 +37,7 @@
                     "Aggrego\\AggregateEventConsumer\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -40,9 +46,7 @@
                     "name": "Tomasz Kunicki"
                 }
             ],
-            "transport-options": {
-                "symlink": true
-            }
+            "time": "2018-09-24T15:13:03+00:00"
         },
         {
             "name": "aggrego/domain",
