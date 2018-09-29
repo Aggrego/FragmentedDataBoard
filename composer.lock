@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Aggrego/AggregateEventConsumer.git",
-                "reference": "a59cdc2d522b91c476f5edfbc65c13c89be90757"
+                "reference": "ac1b7108a5b2ea738c096e155b6b8e9ce6e88889"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Aggrego/AggregateEventConsumer/zipball/a59cdc2d522b91c476f5edfbc65c13c89be90757",
-                "reference": "a59cdc2d522b91c476f5edfbc65c13c89be90757",
+                "url": "https://api.github.com/repos/Aggrego/AggregateEventConsumer/zipball/ac1b7108a5b2ea738c096e155b6b8e9ce6e88889",
+                "reference": "ac1b7108a5b2ea738c096e155b6b8e9ce6e88889",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
                     "name": "Tomasz Kunicki"
                 }
             ],
-            "time": "2018-09-24T15:13:03+00:00"
+            "time": "2018-09-25T20:45:49+00:00"
         },
         {
             "name": "aggrego/domain",
@@ -54,12 +54,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Aggrego/Domain.git",
-                "reference": "389186add659c26c0448ceec3464844cc12ddb02"
+                "reference": "8b72831ef0e60ca9a88668531f282d39e721f911"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Aggrego/Domain/zipball/389186add659c26c0448ceec3464844cc12ddb02",
-                "reference": "389186add659c26c0448ceec3464844cc12ddb02",
+                "url": "https://api.github.com/repos/Aggrego/Domain/zipball/8b72831ef0e60ca9a88668531f282d39e721f911",
+                "reference": "8b72831ef0e60ca9a88668531f282d39e721f911",
                 "shasum": ""
             },
             "require": {
@@ -90,7 +90,7 @@
                     "name": "Tomasz Kunicki"
                 }
             ],
-            "time": "2018-09-24T18:39:03+00:00"
+            "time": "2018-09-28T06:03:03+00:00"
         },
         {
             "name": "aggrego/event-consumer",
@@ -98,12 +98,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Aggrego/EventConsumer.git",
-                "reference": "610f2844a702c314ee17a5ddc06bce503dc1d7e8"
+                "reference": "3b5e45f8b2bb4622b350a418ac921477579eb7d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Aggrego/EventConsumer/zipball/610f2844a702c314ee17a5ddc06bce503dc1d7e8",
-                "reference": "610f2844a702c314ee17a5ddc06bce503dc1d7e8",
+                "url": "https://api.github.com/repos/Aggrego/EventConsumer/zipball/3b5e45f8b2bb4622b350a418ac921477579eb7d7",
+                "reference": "3b5e45f8b2bb4622b350a418ac921477579eb7d7",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,7 @@
                     "name": "Tomasz Kunicki"
                 }
             ],
-            "time": "2018-09-24T18:36:16+00:00"
+            "time": "2018-09-25T20:04:54+00:00"
         },
         {
             "name": "beberlei/assert",
@@ -691,19 +691,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "8788c31191242bca77a260b1d2c2621f18c9c1c3"
+                "reference": "8f58c558d3263405c13df40489c35fe1eefd8f0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8788c31191242bca77a260b1d2c2621f18c9c1c3",
-                "reference": "8788c31191242bca77a260b1d2c2621f18c9c1c3",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8f58c558d3263405c13df40489c35fe1eefd8f0e",
+                "reference": "8f58c558d3263405c13df40489c35fe1eefd8f0e",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^4.0",
+                "doctrine/coding-standard": "^5.0",
                 "ext-pdo": "*",
                 "ext-phar": "*",
                 "phpbench/phpbench": "^0.13",
@@ -738,7 +738,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2018-09-05T19:40:54+00:00"
+            "time": "2018-09-25T21:32:24+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -1756,12 +1756,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "e4f1ce8e2f10b4f8b37d32125e1720bea6851096"
+                "reference": "0a0d27ed2c28a08dc42430f7b7157010ca0544c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/e4f1ce8e2f10b4f8b37d32125e1720bea6851096",
-                "reference": "e4f1ce8e2f10b4f8b37d32125e1720bea6851096",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/0a0d27ed2c28a08dc42430f7b7157010ca0544c1",
+                "reference": "0a0d27ed2c28a08dc42430f7b7157010ca0544c1",
                 "shasum": ""
             },
             "require": {
@@ -1797,7 +1797,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2018-09-21T12:51:02+00:00"
+            "time": "2018-09-26T05:38:44+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",

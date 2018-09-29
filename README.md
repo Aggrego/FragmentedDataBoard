@@ -1,12 +1,8 @@
 [![License](https://poser.pugx.org/aggrego/fragmented-data-board/license.svg)](https://packagist.org/packages/aggrego/fragmented-data-board)
-[![Latest Stable Version](https://poser.pugx.org/aggrego/fragmented-data-boardv/stable.svg)](https://packagist.org/packages/aggrego/fragmented-data-board)
-[![Total Downloads](https://poser.pugx.org/aggrego/fragmented-data-boarddownloads.svg)](https://packagist.org/packages/aggrego/fragmented-data-board)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/aggrego/fragmented-data-boardbadges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/aggrego/fragmented-data-board?branch=master)
-
-### Aggrego
-
-This library is domain of collection data in lazy way.
-This is my small Proof of Concept.
+[![Latest Stable Version](https://poser.pugx.org/aggrego/fragmented-data-board/v/stable.svg)](https://packagist.org/packages/aggrego/fragmented-data-board)
+[![Total Downloads](https://poser.pugx.org/aggrego/fragmented-data-board/downloads.svg)](https://packagist.org/packages/aggrego/fragmented-data-board)
+[![Travis](https://travis-ci.org/Aggrego/FragmentedDataBoard.svg?branch=master)](https://travis-ci.org/Aggrego/FragmentedDataBoard/builds)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Aggrego/FragmentedDataBoard/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Aggrego/FragmentedDataBoard?branch=master)
 
 ## Versioning
  

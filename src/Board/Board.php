@@ -1,21 +1,28 @@
 <?php
+/**
+ *
+ * This file is part of the Aggrego.
+ * (c) Tomasz Kunicki <kunicki.tomasz@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ */
 
 declare(strict_types = 1);
 
 namespace Aggrego\FragmentedDataBoard\Board;
 
+use Aggrego\AggregateEventConsumer\Shared\TraitAggregate;
+use Aggrego\AggregateEventConsumer\Uuid;
 use Aggrego\Domain\Board\Board as DomainBoard;
-use Aggrego\Domain\Board\Uuid;
-use Aggrego\EventStore\Shared\Event\Model\TraitAggregate;
-use Aggrego\EventStore\Uuid as EventStoreUuid;
+use Aggrego\Domain\Board\Key;
+use Aggrego\Domain\Profile\Profile;
 use Aggrego\FragmentedDataBoard\Board\Events\BoardCreatedEvent;
 use Aggrego\FragmentedDataBoard\Board\Events\ShardAddedEvent;
 use Aggrego\FragmentedDataBoard\Board\Events\ShardUpdatedEvent;
-use Aggrego\FragmentedDataBoard\Board\Events\UpdatedLastStepsShardEvent;
 use Aggrego\FragmentedDataBoard\Board\Exception\UnprocessableBoardException;
 use Aggrego\FragmentedDataBoard\Board\Shard\FinalItem;
-use Aggrego\Domain\Board\Key;
-use Aggrego\Domain\Profile\Profile;
 use Aggrego\FragmentedDataBoard\Board\Shard\Uuid as ShardUuid;
 
 class Board implements DomainBoard
@@ -58,12 +65,9 @@ class Board implements DomainBoard
         $shard = new FinalItem($shardUuid, $profile, $data);
         $this->metadata->replace($shard);
         $this->pushEvent(new ShardUpdatedEvent($this->uuid, $shard));
-        if ($this->metadata->readyToTransformation()) {
-            $this->pushEvent(new UpdatedLastStepsShardEvent($this->uuid));
-        }
     }
 
-    public function getUuid(): EventStoreUuid
+    public function getUuid(): Uuid
     {
         return $this->uuid;
     }
@@ -71,5 +75,13 @@ class Board implements DomainBoard
     public function getProfile(): Profile
     {
         return $this->profile;
+    }
+
+    public function getFinalMetadata(): Metadata
+    {
+        if (!$this->metadata->readyToTransformation()) {
+            throw new UnprocessableBoardException();
+        }
+        return $this->metadata;
     }
 }
