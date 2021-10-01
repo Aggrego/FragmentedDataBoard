@@ -13,9 +13,9 @@ declare(strict_types = 1);
 
 namespace Aggrego\FragmentedDataBoard\Board;
 
+use Aggrego\Domain\Board\Metadata as DomainMetadata;
 use Aggrego\FragmentedDataBoard\Board\Shard\Collection;
 use Aggrego\FragmentedDataBoard\Board\Shard\FinalItem;
-use Aggrego\Domain\Board\Metadata as DomainMetadata;
 
 class Metadata implements DomainMetadata
 {
@@ -36,18 +36,13 @@ class Metadata implements DomainMetadata
         return $this->state;
     }
 
-    public function replace(FinalItem $finalItem): void
+    public function replace(FinalItem $finalItem): self
     {
-        $this->shards->replace($finalItem);
+        return new self($this->state, $this->shards->replace($finalItem));
     }
 
     public function getShards(): Collection
     {
         return $this->shards;
-    }
-
-    public function readyToTransformation(): bool
-    {
-        return $this->shards->isAllShardsFinishedProgress();
     }
 }

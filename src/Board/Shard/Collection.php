@@ -26,13 +26,18 @@ class Collection implements Countable, IteratorAggregate
     /** @var Item[] */
     private $list;
 
-    public function __construct(array $list)
+    private function __construct(array $list)
     {
-        Assertion::allIsInstanceOf($list, InitialItem::class);
         $this->list = $list;
     }
 
-    public function replace(FinalItem $finalShard): void
+    public static function createNew(array $list): self
+    {
+        Assertion::allIsInstanceOf($list, InitialItem::class);
+        return new self($list);
+    }
+
+    public function replace(FinalItem $finalShard): self
     {
         /** @var Item $shard */
         $list = $this->list;
@@ -45,8 +50,7 @@ class Collection implements Countable, IteratorAggregate
             if ($shard->getUuid()->equal($finalShard->getUuid())
                 && $shard->getProfile()->equal($finalShard->getProfile())) {
                 $list[$key] = $finalShard;
-                $this->list = $list;
-                return;
+                return new self($list);
             }
         }
 
@@ -62,16 +66,6 @@ class Collection implements Countable, IteratorAggregate
     public function count(): int
     {
         return count($this->list);
-    }
-
-    public function isAllShardsFinishedProgress(): bool
-    {
-        foreach ($this as $shard) {
-            if ($shard instanceof InitialItem) {
-                return false;
-            }
-        }
-        return true;
     }
 
     public function getIterator(): Iterator

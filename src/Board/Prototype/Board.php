@@ -13,16 +13,16 @@ declare(strict_types = 1);
 
 namespace Aggrego\FragmentedDataBoard\Board\Prototype;
 
+use Aggrego\Domain\Board\Key;
+use Aggrego\Domain\Board\Metadata as DomainMetadata;
+use Aggrego\Domain\Board\Prototype\Board as BoardInterface;
+use Aggrego\Domain\Profile\Profile;
 use Aggrego\FragmentedDataBoard\Board\Metadata;
 use Aggrego\FragmentedDataBoard\Board\Prototype\Shard\Collection;
 use Aggrego\FragmentedDataBoard\Board\Prototype\Shard\Item;
 use Aggrego\FragmentedDataBoard\Board\Shard\Collection as ShardsCollection;
 use Aggrego\FragmentedDataBoard\Board\Shard\InitialItem;
 use Aggrego\FragmentedDataBoard\Board\State;
-use Aggrego\Domain\Board\Key;
-use Aggrego\Domain\Board\Metadata as DomainMetadata;
-use Aggrego\Domain\Board\Prototype\Board as BoardInterface;
-use Aggrego\Domain\Profile\Profile;
 use Traversable;
 
 class Board implements BoardInterface
@@ -36,7 +36,7 @@ class Board implements BoardInterface
     /** @var Collection */
     private $shards;
 
-    /** @var State  */
+    /** @var State */
     private $state;
 
     public function __construct(Key $key, Profile $profile, State $state)

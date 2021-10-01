@@ -20,10 +20,9 @@ use Aggrego\Domain\Board\Key;
 use Aggrego\Domain\Profile\Profile;
 use Aggrego\FragmentedDataBoard\Board\Events\BoardCreatedEvent;
 use Aggrego\FragmentedDataBoard\Board\Events\ShardAddedEvent;
-use Aggrego\FragmentedDataBoard\Board\Events\ShardUpdatedEvent;
-use Aggrego\FragmentedDataBoard\Board\Exception\UnprocessableBoardException;
 use Aggrego\FragmentedDataBoard\Board\Shard\FinalItem;
-use Aggrego\FragmentedDataBoard\Board\Shard\Uuid as ShardUuid;
+use Aggrego\FragmentedDataBoard\Board\Transformation\Item;
+use Aggrego\FragmentedDataBoard\Board\Transformation\Key as TransformationKey;
 
 class Board implements DomainBoard
 {
@@ -41,7 +40,7 @@ class Board implements DomainBoard
     /** @var Metadata */
     private $metadata;
 
-    private function __construct(Uuid $uuid, Key $key, Profile $profile, Metadata $metadata, ?Uuid $parentUuid)
+    public function __construct(Uuid $uuid, Key $key, Profile $profile, Metadata $metadata, ?Uuid $parentUuid)
     {
         $this->uuid = $uuid;
         $this->key = $key;
@@ -56,18 +55,7 @@ class Board implements DomainBoard
         }
     }
 
-    public function updateShard(ShardUuid $shardUuid, Profile $profile, Data $data): void
-    {
-        if (!$this->metadata->readyToTransformation()) {
-            throw new UnprocessableBoardException();
-        }
-
-        $shard = new FinalItem($shardUuid, $profile, $data);
-        $this->metadata->replace($shard);
-        $this->pushEvent(new ShardUpdatedEvent($this->uuid, $shard));
-    }
-
-    public function getUuid(): Uuid
+    public function getId(): Uuid
     {
         return $this->uuid;
     }
@@ -77,11 +65,20 @@ class Board implements DomainBoard
         return $this->profile;
     }
 
-    public function getFinalMetadata(): Metadata
+    public function generateTransformedMetadata(TransformationKey $key): Metadata
     {
-        if (!$this->metadata->readyToTransformation()) {
-            throw new UnprocessableBoardException();
+        $metadata = $this->metadata;
+        /** @var Item $item */
+        foreach ($key as $item) {
+            $metadata = $metadata->replace(
+                new FinalItem(
+                    $item->getUuid(),
+                    $item->getProfile(),
+                    $item->getData()
+                )
+            );
         }
-        return $this->metadata;
+
+        return $metadata;
     }
 }

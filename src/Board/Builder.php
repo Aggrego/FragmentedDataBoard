@@ -14,13 +14,13 @@ declare(strict_types = 1);
 namespace Aggrego\FragmentedDataBoard\Board;
 
 use Aggrego\AggregateEventConsumer\Uuid;
-use Aggrego\Domain\Board\Board;
+use Aggrego\Domain\Board\Board as DomainBoard;
+use Aggrego\Domain\Board\Builder as FactoryInterface;
 use Aggrego\Domain\Board\Key;
 use Aggrego\Domain\Board\Metadata;
+use Aggrego\Domain\Board\Prototype\Board as PrototypeBoard;
 use Aggrego\Domain\Profile\Profile;
 use Aggrego\FragmentedDataBoard\Board\Prototype\Board as ProgressiveBoardPrototype;
-use Aggrego\Domain\Board\Builder as FactoryInterface;
-use Aggrego\Domain\Board\Prototype\Board as PrototypeBoard;
 
 class Builder implements FactoryInterface
 {
@@ -29,8 +29,8 @@ class Builder implements FactoryInterface
         return $board instanceof ProgressiveBoardPrototype;
     }
 
-    public function build(Uuid $uuid, Key $key, Profile $profile, Metadata $step, ?Uuid $parentUuid): Board
+    public function build(Uuid $uuid, Key $key, Profile $profile, Metadata $metadata, ?Uuid $parentUuid): DomainBoard
     {
-        // TODO: Implement build() method.
+        return new Board($uuid, $key, $profile, $metadata, $parentUuid);
     }
 }

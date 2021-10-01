@@ -1,2198 +1,1634 @@
 {
-    "_readme": [
-        "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-        "This file is @generated automatically"
-    ],
-    "content-hash": "7a2675155e10886525220ac368a3ecfa",
-    "packages": [
-        {
-            "name": "aggrego/aggregate-event-consumer",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Aggrego/AggregateEventConsumer.git",
-                "reference": "ac1b7108a5b2ea738c096e155b6b8e9ce6e88889"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Aggrego/AggregateEventConsumer/zipball/ac1b7108a5b2ea738c096e155b6b8e9ce6e88889",
-                "reference": "ac1b7108a5b2ea738c096e155b6b8e9ce6e88889",
-                "shasum": ""
-            },
-            "require": {
-                "aggrego/event-consumer": "dev-master",
-                "beberlei/assert": "^3.0",
-                "composer/semver": "1.4.*",
-                "php": ">=7.1",
-                "timitao/value-object": "dev-master"
-            },
-            "require-dev": {
-                "phpspec/phpspec": "^5.0",
-                "wikimedia/composer-merge-plugin": "1.4.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Aggrego\\AggregateEventConsumer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Tomasz Kunicki"
-                }
-            ],
-            "time": "2018-09-25T20:45:49+00:00"
-        },
-        {
-            "name": "aggrego/domain",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Aggrego/Domain.git",
-                "reference": "8b72831ef0e60ca9a88668531f282d39e721f911"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Aggrego/Domain/zipball/8b72831ef0e60ca9a88668531f282d39e721f911",
-                "reference": "8b72831ef0e60ca9a88668531f282d39e721f911",
-                "shasum": ""
-            },
-            "require": {
-                "aggrego/aggregate-event-consumer": "dev-master",
-                "beberlei/assert": "^3.0",
-                "php": ">=7.1",
-                "ramsey/uuid": "^3.8",
-                "timitao/value-object": "dev-master"
-            },
-            "require-dev": {
-                "behat/behat": "^3.4",
-                "phpspec/phpspec": "^5.0",
-                "timitao/behat-symfony-container": "^1.1",
-                "wikimedia/composer-merge-plugin": "1.4.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Aggrego\\Domain\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Tomasz Kunicki"
-                }
-            ],
-            "time": "2018-09-28T06:03:03+00:00"
-        },
-        {
-            "name": "aggrego/event-consumer",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Aggrego/EventConsumer.git",
-                "reference": "3b5e45f8b2bb4622b350a418ac921477579eb7d7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Aggrego/EventConsumer/zipball/3b5e45f8b2bb4622b350a418ac921477579eb7d7",
-                "reference": "3b5e45f8b2bb4622b350a418ac921477579eb7d7",
-                "shasum": ""
-            },
-            "require": {
-                "beberlei/assert": "^3.0",
-                "composer/semver": "1.4.*",
-                "php": ">=7.1",
-                "timitao/value-object": "dev-master"
-            },
-            "require-dev": {
-                "phpspec/phpspec": "^5.0",
-                "wikimedia/composer-merge-plugin": "1.4.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Aggrego\\EventConsumer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Tomasz Kunicki"
-                }
-            ],
-            "time": "2018-09-25T20:04:54+00:00"
-        },
-        {
-            "name": "beberlei/assert",
-            "version": "v3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/beberlei/assert.git",
-                "reference": "891103759a35926323be6296ebd3f1579a52d82a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/beberlei/assert/zipball/891103759a35926323be6296ebd3f1579a52d82a",
-                "reference": "891103759a35926323be6296ebd3f1579a52d82a",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": "^7"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.1.1",
-                "phpstan/phpstan": "^0.9.2",
-                "phpunit/phpunit": "^5.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Assert\\": "lib/Assert"
-                },
-                "files": [
-                    "lib/Assert/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Richard Quadling",
-                    "email": "rquadling@gmail.com",
-                    "role": "Collaborator"
-                }
-            ],
-            "description": "Thin assertion library for input validation in business models.",
-            "keywords": [
-                "assert",
-                "assertion",
-                "validation"
-            ],
-            "time": "2018-07-04T11:02:54+00:00"
-        },
-        {
-            "name": "composer/semver",
-            "version": "1.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/composer/semver.git",
-                "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/c7cb9a2095a074d131b65a8a0cd294479d785573",
-                "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.3.2 || ^7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.5 || ^5.0.5",
-                "phpunit/phpunit-mock-objects": "2.3.0 || ^3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Composer\\Semver\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nils Adermann",
-                    "email": "naderman@naderman.de",
-                    "homepage": "http://www.naderman.de"
-                },
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be"
-                },
-                {
-                    "name": "Rob Bast",
-                    "email": "rob.bast@gmail.com",
-                    "homepage": "http://robbast.nl"
-                }
-            ],
-            "description": "Semver library that offers utilities, version constraint parsing and validation.",
-            "keywords": [
-                "semantic",
-                "semver",
-                "validation",
-                "versioning"
-            ],
-            "time": "2016-08-30T16:08:34+00:00"
-        },
-        {
-            "name": "paragonie/random_compat",
-            "version": "v9.99.99",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
-                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.*|5.*",
-                "vimeo/psalm": "^1"
-            },
-            "suggest": {
-                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Paragon Initiative Enterprises",
-                    "email": "security@paragonie.com",
-                    "homepage": "https://paragonie.com"
-                }
-            ],
-            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
-            "keywords": [
-                "csprng",
-                "polyfill",
-                "pseudorandom",
-                "random"
-            ],
-            "time": "2018-07-02T15:55:56+00:00"
-        },
-        {
-            "name": "ramsey/uuid",
-            "version": "3.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ramsey/uuid.git",
-                "reference": "4c467ce4d5a72c3cf0832c813d4d84d222c3d4bb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/4c467ce4d5a72c3cf0832c813d4d84d222c3d4bb",
-                "reference": "4c467ce4d5a72c3cf0832c813d4d84d222c3d4bb",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "paragonie/random_compat": "^1.0|^2.0|9.99.99",
-                "php": "^5.4 || ^7.0",
-                "symfony/polyfill-ctype": "^1.8"
-            },
-            "replace": {
-                "rhumsaa/uuid": "self.version"
-            },
-            "require-dev": {
-                "codeception/aspect-mock": "^1.0 | ~2.0.0",
-                "doctrine/annotations": "~1.2.0",
-                "goaop/framework": "1.0.0-alpha.2 | ^1.0 | ~2.1.0",
-                "ircmaxell/random-lib": "^1.1",
-                "jakub-onderka/php-parallel-lint": "^0.9.0",
-                "mockery/mockery": "^0.9.9",
-                "moontoast/math": "^1.1",
-                "php-mock/php-mock-phpunit": "^0.3|^1.1",
-                "phpunit/phpunit": "^4.7|^5.0|^6.5",
-                "squizlabs/php_codesniffer": "^2.3"
-            },
-            "suggest": {
-                "ext-ctype": "Provides support for PHP Ctype functions",
-                "ext-libsodium": "Provides the PECL libsodium extension for use with the SodiumRandomGenerator",
-                "ext-uuid": "Provides the PECL UUID extension for use with the PeclUuidTimeGenerator and PeclUuidRandomGenerator",
-                "ircmaxell/random-lib": "Provides RandomLib for use with the RandomLibAdapter",
-                "moontoast/math": "Provides support for converting UUID to 128-bit integer (in string form).",
-                "ramsey/uuid-console": "A console application for generating UUIDs with ramsey/uuid",
-                "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Ramsey\\Uuid\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marijn Huizendveld",
-                    "email": "marijn.huizendveld@gmail.com"
-                },
-                {
-                    "name": "Thibaud Fabre",
-                    "email": "thibaud@aztech.io"
-                },
-                {
-                    "name": "Ben Ramsey",
-                    "email": "ben@benramsey.com",
-                    "homepage": "https://benramsey.com"
-                }
-            ],
-            "description": "Formerly rhumsaa/uuid. A PHP 5.4+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID).",
-            "homepage": "https://github.com/ramsey/uuid",
-            "keywords": [
-                "guid",
-                "identifier",
-                "uuid"
-            ],
-            "time": "2018-08-12T15:49:01+00:00"
-        },
-        {
-            "name": "symfony/polyfill-ctype",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
-                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "suggest": {
-                "ext-ctype": "For best performance"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.9-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Ctype\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                },
-                {
-                    "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
-                }
-            ],
-            "description": "Symfony polyfill for ctype functions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "ctype",
-                "polyfill",
-                "portable"
-            ],
-            "time": "2018-08-06T14:22:27+00:00"
-        },
-        {
-            "name": "timitao/value-object",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/timiTao/ValueObject.git",
-                "reference": "5d6c92324208554e9e920b6ef3ff0f085abf82ee"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/timiTao/ValueObject/zipball/5d6c92324208554e9e920b6ef3ff0f085abf82ee",
-                "reference": "5d6c92324208554e9e920b6ef3ff0f085abf82ee",
-                "shasum": ""
-            },
-            "require": {
-                "beberlei/assert": "^3.0",
-                "php": ">=7.1"
-            },
-            "type": "domain",
-            "autoload": {
-                "psr-4": {
-                    "TimiTao\\ValueObject\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Tomasz Kunicki"
-                }
-            ],
-            "time": "2018-09-15T07:32:36+00:00"
+  "_readme": [
+    "This file locks the dependencies of your project to a known state",
+    "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+    "This file is @generated automatically"
+  ],
+  "content-hash": "ac883246935a8518bea875d8ee18a188",
+  "packages": [
+    {
+      "name": "aggrego/aggregate-event-consumer",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/Aggrego/AggregateEventConsumer.git",
+        "reference": "23689276686167ec3020d008096427241ba722bf"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/Aggrego/AggregateEventConsumer/zipball/23689276686167ec3020d008096427241ba722bf",
+        "reference": "23689276686167ec3020d008096427241ba722bf",
+        "shasum": ""
+      },
+      "require": {
+        "aggrego/event-consumer": "dev-master",
+        "beberlei/assert": "^3.0",
+        "composer/semver": "1.4.*",
+        "php": ">=7.1",
+        "timitao/value-object": "dev-master"
+      },
+      "require-dev": {
+        "phpspec/phpspec": "^5.0",
+        "wikimedia/composer-merge-plugin": "1.4.*"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "Aggrego\\AggregateEventConsumer\\": "src/"
         }
-    ],
-    "packages-dev": [
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "authors": [
         {
-            "name": "behat/behat",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Behat/Behat.git",
-                "reference": "09c57b0614d4961df6b6af91287b8c81bac3d0b1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Behat/zipball/09c57b0614d4961df6b6af91287b8c81bac3d0b1",
-                "reference": "09c57b0614d4961df6b6af91287b8c81bac3d0b1",
-                "shasum": ""
-            },
-            "require": {
-                "behat/gherkin": "^4.5.1",
-                "behat/transliterator": "^1.2",
-                "container-interop/container-interop": "^1.2",
-                "ext-mbstring": "*",
-                "php": ">=5.3.3",
-                "psr/container": "^1.0",
-                "symfony/config": "~2.3||~3.0||~4.0",
-                "symfony/console": "~2.7.40||^2.8.33||~3.3.15||^3.4.3||^4.0.3",
-                "symfony/dependency-injection": "~2.1||~3.0||~4.0",
-                "symfony/event-dispatcher": "~2.1||~3.0||~4.0",
-                "symfony/translation": "~2.3||~3.0||~4.0",
-                "symfony/yaml": "~2.1||~3.0||~4.0"
-            },
-            "require-dev": {
-                "herrera-io/box": "~1.6.1",
-                "phpunit/phpunit": "^4.8.36|^6.3",
-                "symfony/process": "~2.5|~3.0|~4.0"
-            },
-            "bin": [
-                "bin/behat"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.5.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Behat\\Behat": "src/",
-                    "Behat\\Testwork": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                }
-            ],
-            "description": "Scenario-oriented BDD framework for PHP 5.3",
-            "homepage": "http://behat.org/",
-            "keywords": [
-                "Agile",
-                "BDD",
-                "ScenarioBDD",
-                "Scrum",
-                "StoryBDD",
-                "User story",
-                "business",
-                "development",
-                "documentation",
-                "examples",
-                "symfony",
-                "testing"
-            ],
-            "time": "2018-09-04T10:28:55+00:00"
-        },
-        {
-            "name": "behat/gherkin",
-            "version": "v4.5.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Behat/Gherkin.git",
-                "reference": "74ac03d52c5e23ad8abd5c5cce4ab0e8dc1b530a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/74ac03d52c5e23ad8abd5c5cce4ab0e8dc1b530a",
-                "reference": "74ac03d52c5e23ad8abd5c5cce4ab0e8dc1b530a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.5|~5",
-                "symfony/phpunit-bridge": "~2.7|~3",
-                "symfony/yaml": "~2.3|~3"
-            },
-            "suggest": {
-                "symfony/yaml": "If you want to parse features, represented in YAML files"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Behat\\Gherkin": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                }
-            ],
-            "description": "Gherkin DSL parser for PHP 5.3",
-            "homepage": "http://behat.org/",
-            "keywords": [
-                "BDD",
-                "Behat",
-                "Cucumber",
-                "DSL",
-                "gherkin",
-                "parser"
-            ],
-            "time": "2017-08-30T11:04:43+00:00"
-        },
-        {
-            "name": "behat/transliterator",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Behat/Transliterator.git",
-                "reference": "826ce7e9c2a6664c0d1f381cbb38b1fb80a7ee2c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Transliterator/zipball/826ce7e9c2a6664c0d1f381cbb38b1fb80a7ee2c",
-                "reference": "826ce7e9c2a6664c0d1f381cbb38b1fb80a7ee2c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "chuyskywalker/rolling-curl": "^3.1",
-                "php-yaoi/php-yaoi": "^1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Behat\\Transliterator": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Artistic-1.0"
-            ],
-            "description": "String transliterator",
-            "keywords": [
-                "i18n",
-                "slug",
-                "transliterator"
-            ],
-            "time": "2017-04-04T11:38:05+00:00"
-        },
-        {
-            "name": "container-interop/container-interop",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/container-interop/container-interop.git",
-                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/79cbf1341c22ec75643d841642dd5d6acd83bdb8",
-                "reference": "79cbf1341c22ec75643d841642dd5d6acd83bdb8",
-                "shasum": ""
-            },
-            "require": {
-                "psr/container": "^1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Interop\\Container\\": "src/Interop/Container/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
-            "homepage": "https://github.com/container-interop/container-interop",
-            "time": "2017-02-14T19:40:03+00:00"
-        },
-        {
-            "name": "doctrine/instantiator",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "8f58c558d3263405c13df40489c35fe1eefd8f0e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8f58c558d3263405c13df40489c35fe1eefd8f0e",
-                "reference": "8f58c558d3263405c13df40489c35fe1eefd8f0e",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "doctrine/coding-standard": "^5.0",
-                "ext-pdo": "*",
-                "ext-phar": "*",
-                "phpbench/phpbench": "^0.13",
-                "phpstan/phpstan-shim": "^0.9.2",
-                "phpunit/phpunit": "^7.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com",
-                    "homepage": "http://ocramius.github.com/"
-                }
-            ],
-            "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
-            "homepage": "https://www.doctrine-project.org/projects/instantiator.html",
-            "keywords": [
-                "constructor",
-                "instantiate"
-            ],
-            "time": "2018-09-25T21:32:24+00:00"
-        },
-        {
-            "name": "phpdocumentor/reflection-common",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
-                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
-                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.6"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "src"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jaap van Otterdijk",
-                    "email": "opensource@ijaap.nl"
-                }
-            ],
-            "description": "Common reflection classes used by phpdocumentor to reflect the code structure",
-            "homepage": "http://www.phpdoc.org",
-            "keywords": [
-                "FQSEN",
-                "phpDocumentor",
-                "phpdoc",
-                "reflection",
-                "static analysis"
-            ],
-            "time": "2017-09-11T18:02:19+00:00"
-        },
-        {
-            "name": "phpdocumentor/reflection-docblock",
-            "version": "4.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "94fd0001232e47129dd3504189fa1c7225010d08"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/94fd0001232e47129dd3504189fa1c7225010d08",
-                "reference": "94fd0001232e47129dd3504189fa1c7225010d08",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0",
-                "phpdocumentor/reflection-common": "^1.0.0",
-                "phpdocumentor/type-resolver": "^0.4.0",
-                "webmozart/assert": "^1.0"
-            },
-            "require-dev": {
-                "doctrine/instantiator": "~1.0.5",
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^6.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "src/"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mike van Riel",
-                    "email": "me@mikevanriel.com"
-                }
-            ],
-            "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2017-11-30T07:14:17+00:00"
-        },
-        {
-            "name": "phpdocumentor/type-resolver",
-            "version": "0.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
-                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5 || ^7.0",
-                "phpdocumentor/reflection-common": "^1.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^0.9.4",
-                "phpunit/phpunit": "^5.2||^4.8.24"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "src/"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mike van Riel",
-                    "email": "me@mikevanriel.com"
-                }
-            ],
-            "time": "2017-07-14T14:27:02+00:00"
-        },
-        {
-            "name": "phpspec/php-diff",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpspec/php-diff.git",
-                "reference": "0464787bfa7cd13576c5a1e318709768798bec6a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/php-diff/zipball/0464787bfa7cd13576c5a1e318709768798bec6a",
-                "reference": "0464787bfa7cd13576c5a1e318709768798bec6a",
-                "shasum": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Diff": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Chris Boulton",
-                    "homepage": "http://github.com/chrisboulton"
-                }
-            ],
-            "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
-            "time": "2016-04-07T12:29:16+00:00"
-        },
-        {
-            "name": "phpspec/phpspec",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpspec/phpspec.git",
-                "reference": "eeb9503bdd0bca26d7d7dcfb87742a9675d3bbcd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/eeb9503bdd0bca26d7d7dcfb87742a9675d3bbcd",
-                "reference": "eeb9503bdd0bca26d7d7dcfb87742a9675d3bbcd",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/instantiator": "^1.0.5",
-                "ext-tokenizer": "*",
-                "php": "^7.1, <7.3",
-                "phpspec/php-diff": "^1.0.0",
-                "phpspec/prophecy": "^1.7",
-                "sebastian/exporter": "^1.0 || ^2.0 || ^3.0",
-                "symfony/console": "^3.4 || ^4.0",
-                "symfony/event-dispatcher": "^3.4 || ^4.0",
-                "symfony/finder": "^3.4 || ^4.0",
-                "symfony/process": "^3.4 || ^4.0",
-                "symfony/yaml": "^3.4 || ^4.0"
-            },
-            "require-dev": {
-                "behat/behat": "^3.3",
-                "phpunit/phpunit": "^5.7 || ^6.0",
-                "symfony/filesystem": "^3.4 || ^4.0"
-            },
-            "suggest": {
-                "phpspec/nyan-formatters": "Adds Nyan formatters"
-            },
-            "bin": [
-                "bin/phpspec"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "PhpSpec": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                },
-                {
-                    "name": "Marcello Duarte",
-                    "homepage": "http://marcelloduarte.net/"
-                },
-                {
-                    "name": "Ciaran McNulty",
-                    "homepage": "https://ciaranmcnulty.com/"
-                }
-            ],
-            "description": "Specification-oriented BDD framework for PHP 5.6+",
-            "homepage": "http://phpspec.net/",
-            "keywords": [
-                "BDD",
-                "SpecBDD",
-                "TDD",
-                "spec",
-                "specification",
-                "testing",
-                "tests"
-            ],
-            "time": "2018-09-24T07:40:08+00:00"
-        },
-        {
-            "name": "phpspec/prophecy",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
-                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/instantiator": "^1.0.2",
-                "php": "^5.3|^7.0",
-                "phpdocumentor/reflection-docblock": "^2.0|^3.0.2|^4.0",
-                "sebastian/comparator": "^1.1|^2.0|^3.0",
-                "sebastian/recursion-context": "^1.0|^2.0|^3.0"
-            },
-            "require-dev": {
-                "phpspec/phpspec": "^2.5|^3.2",
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5 || ^7.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.8.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Prophecy\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                },
-                {
-                    "name": "Marcello Duarte",
-                    "email": "marcello.duarte@gmail.com"
-                }
-            ],
-            "description": "Highly opinionated mocking framework for PHP 5.3+",
-            "homepage": "https://github.com/phpspec/prophecy",
-            "keywords": [
-                "Double",
-                "Dummy",
-                "fake",
-                "mock",
-                "spy",
-                "stub"
-            ],
-            "time": "2018-08-05T17:53:17+00:00"
-        },
-        {
-            "name": "psr/container",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/container.git",
-                "reference": "2cc4a01788191489dc7459446ba832fa79a216a7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/2cc4a01788191489dc7459446ba832fa79a216a7",
-                "reference": "2cc4a01788191489dc7459446ba832fa79a216a7",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Container\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common Container Interface (PHP FIG PSR-11)",
-            "homepage": "https://github.com/php-fig/container",
-            "keywords": [
-                "PSR-11",
-                "container",
-                "container-interface",
-                "container-interop",
-                "psr"
-            ],
-            "time": "2017-06-28T15:35:32+00:00"
-        },
-        {
-            "name": "sebastian/comparator",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "2256ef8e824cc494ddeebaa00fabe7ab4d83fc75"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/2256ef8e824cc494ddeebaa00fabe7ab4d83fc75",
-                "reference": "2256ef8e824cc494ddeebaa00fabe7ab4d83fc75",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1",
-                "sebastian/diff": "^3.0",
-                "sebastian/exporter": "^3.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Jeff Welch",
-                    "email": "whatthejeff@gmail.com"
-                },
-                {
-                    "name": "Volker Dusch",
-                    "email": "github@wallbash.com"
-                },
-                {
-                    "name": "Bernhard Schussek",
-                    "email": "bschussek@2bepublished.at"
-                },
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
-                }
-            ],
-            "description": "Provides the functionality to compare PHP values for equality",
-            "homepage": "https://github.com/sebastianbergmann/comparator",
-            "keywords": [
-                "comparator",
-                "compare",
-                "equality"
-            ],
-            "time": "2018-09-07T13:55:31+00:00"
-        },
-        {
-            "name": "sebastian/diff",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "366541b989927187c4ca70490a35615d3fef2dce"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/366541b989927187c4ca70490a35615d3fef2dce",
-                "reference": "366541b989927187c4ca70490a35615d3fef2dce",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^7.0",
-                "symfony/process": "^2 || ^3.3 || ^4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Kore Nordmann",
-                    "email": "mail@kore-nordmann.de"
-                },
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
-                }
-            ],
-            "description": "Diff implementation",
-            "homepage": "https://github.com/sebastianbergmann/diff",
-            "keywords": [
-                "diff",
-                "udiff",
-                "unidiff",
-                "unified diff"
-            ],
-            "time": "2018-06-10T07:54:39+00:00"
-        },
-        {
-            "name": "sebastian/exporter",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "c8c4f196e32858e4448bc285e542b61a4c40d9dc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/c8c4f196e32858e4448bc285e542b61a4c40d9dc",
-                "reference": "c8c4f196e32858e4448bc285e542b61a4c40d9dc",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0",
-                "sebastian/recursion-context": "^3.0"
-            },
-            "require-dev": {
-                "ext-mbstring": "*",
-                "phpunit/phpunit": "^6.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Jeff Welch",
-                    "email": "whatthejeff@gmail.com"
-                },
-                {
-                    "name": "Volker Dusch",
-                    "email": "github@wallbash.com"
-                },
-                {
-                    "name": "Bernhard Schussek",
-                    "email": "bschussek@2bepublished.at"
-                },
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
-                },
-                {
-                    "name": "Adam Harvey",
-                    "email": "aharvey@php.net"
-                }
-            ],
-            "description": "Provides the functionality to export PHP variables for visualization",
-            "homepage": "http://www.github.com/sebastianbergmann/exporter",
-            "keywords": [
-                "export",
-                "exporter"
-            ],
-            "time": "2018-06-28T14:22:04+00:00"
-        },
-        {
-            "name": "sebastian/recursion-context",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/recursion-context.git",
-                "reference": "dbe1869c13935c6080c834fc61424834b9ad5907"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/dbe1869c13935c6080c834fc61424834b9ad5907",
-                "reference": "dbe1869c13935c6080c834fc61424834b9ad5907",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Jeff Welch",
-                    "email": "whatthejeff@gmail.com"
-                },
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
-                },
-                {
-                    "name": "Adam Harvey",
-                    "email": "aharvey@php.net"
-                }
-            ],
-            "description": "Provides functionality to recursively process PHP variables",
-            "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
-            "time": "2018-05-15T05:52:05+00:00"
-        },
-        {
-            "name": "symfony/config",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/config.git",
-                "reference": "1dcdcb9f6c743eda02e53f1c3d0f6a0ead4e6fc2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/1dcdcb9f6c743eda02e53f1c3d0f6a0ead4e6fc2",
-                "reference": "1dcdcb9f6c743eda02e53f1c3d0f6a0ead4e6fc2",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/filesystem": "~3.4|~4.0",
-                "symfony/polyfill-ctype": "~1.8"
-            },
-            "conflict": {
-                "symfony/finder": "<3.4"
-            },
-            "require-dev": {
-                "symfony/dependency-injection": "~3.4|~4.0",
-                "symfony/event-dispatcher": "~3.4|~4.0",
-                "symfony/finder": "~3.4|~4.0",
-                "symfony/yaml": "~3.4|~4.0"
-            },
-            "suggest": {
-                "symfony/yaml": "To use the yaml reference dumper"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Config\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Config Component",
-            "homepage": "https://symfony.com",
-            "time": "2018-09-24T07:37:12+00:00"
-        },
-        {
-            "name": "symfony/console",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/console.git",
-                "reference": "f7d88a181e92d64ccc1b4a48061d558aafb671d0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/f7d88a181e92d64ccc1b4a48061d558aafb671d0",
-                "reference": "f7d88a181e92d64ccc1b4a48061d558aafb671d0",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/contracts": "^1.0",
-                "symfony/polyfill-mbstring": "~1.0"
-            },
-            "conflict": {
-                "symfony/dependency-injection": "<3.4",
-                "symfony/process": "<3.3"
-            },
-            "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/config": "~3.4|~4.0",
-                "symfony/dependency-injection": "~3.4|~4.0",
-                "symfony/event-dispatcher": "~3.4|~4.0",
-                "symfony/lock": "~3.4|~4.0",
-                "symfony/process": "~3.4|~4.0"
-            },
-            "suggest": {
-                "psr/log-implementation": "For using the console logger",
-                "symfony/event-dispatcher": "",
-                "symfony/lock": "",
-                "symfony/process": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Console\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Console Component",
-            "homepage": "https://symfony.com",
-            "time": "2018-09-24T07:37:12+00:00"
-        },
-        {
-            "name": "symfony/contracts",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/contracts.git",
-                "reference": "070488ad1b6a60cee2a2fce3e855b97f9918306b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/contracts/zipball/070488ad1b6a60cee2a2fce3e855b97f9918306b",
-                "reference": "070488ad1b6a60cee2a2fce3e855b97f9918306b",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3"
-            },
-            "require-dev": {
-                "psr/cache": "^1.0",
-                "psr/container": "^1.0"
-            },
-            "suggest": {
-                "psr/cache": "When using the Cache contracts",
-                "psr/container": "When using the Service contracts",
-                "symfony/cache-contracts-implementation": "",
-                "symfony/service-contracts-implementation": "",
-                "symfony/translation-contracts-implementation": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Contracts\\": ""
-                },
-                "exclude-from-classmap": [
-                    "**/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "A set of abstractions extracted out of the Symfony components",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "abstractions",
-                "contracts",
-                "decoupling",
-                "interfaces",
-                "interoperability",
-                "standards"
-            ],
-            "time": "2018-09-20T13:44:19+00:00"
-        },
-        {
-            "name": "symfony/dependency-injection",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "b08e15cd0e34b89e12aefd25cfa390c6a60a0147"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/b08e15cd0e34b89e12aefd25cfa390c6a60a0147",
-                "reference": "b08e15cd0e34b89e12aefd25cfa390c6a60a0147",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "psr/container": "^1.0",
-                "symfony/contracts": "^1.0"
-            },
-            "conflict": {
-                "symfony/config": "<4.2",
-                "symfony/finder": "<3.4",
-                "symfony/proxy-manager-bridge": "<3.4",
-                "symfony/yaml": "<3.4"
-            },
-            "provide": {
-                "psr/container-implementation": "1.0",
-                "symfony/service-contracts-implementation": "1.0"
-            },
-            "require-dev": {
-                "symfony/config": "~4.2",
-                "symfony/expression-language": "~3.4|~4.0",
-                "symfony/yaml": "~3.4|~4.0"
-            },
-            "suggest": {
-                "symfony/config": "",
-                "symfony/expression-language": "For using expressions in service container configuration",
-                "symfony/finder": "For using double-star glob patterns or when GLOB_BRACE portability is required",
-                "symfony/proxy-manager-bridge": "Generate service proxies to lazy load them",
-                "symfony/yaml": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\DependencyInjection\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony DependencyInjection Component",
-            "homepage": "https://symfony.com",
-            "time": "2018-09-24T07:37:12+00:00"
-        },
-        {
-            "name": "symfony/event-dispatcher",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "8e15725d4c2e080f354f93f80844cd3d7185b8e9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/8e15725d4c2e080f354f93f80844cd3d7185b8e9",
-                "reference": "8e15725d4c2e080f354f93f80844cd3d7185b8e9",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/contracts": "^1.0"
-            },
-            "conflict": {
-                "symfony/dependency-injection": "<3.4"
-            },
-            "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/config": "~3.4|~4.0",
-                "symfony/dependency-injection": "~3.4|~4.0",
-                "symfony/expression-language": "~3.4|~4.0",
-                "symfony/stopwatch": "~3.4|~4.0"
-            },
-            "suggest": {
-                "symfony/dependency-injection": "",
-                "symfony/http-kernel": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\EventDispatcher\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony EventDispatcher Component",
-            "homepage": "https://symfony.com",
-            "time": "2018-09-11T07:53:26+00:00"
-        },
-        {
-            "name": "symfony/filesystem",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/filesystem.git",
-                "reference": "6fb505845bca93802446cbfdef60d5bb00a56d33"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/6fb505845bca93802446cbfdef60d5bb00a56d33",
-                "reference": "6fb505845bca93802446cbfdef60d5bb00a56d33",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/polyfill-ctype": "~1.8"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Filesystem\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Filesystem Component",
-            "homepage": "https://symfony.com",
-            "time": "2018-09-11T07:53:26+00:00"
-        },
-        {
-            "name": "symfony/finder",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/finder.git",
-                "reference": "0a0d27ed2c28a08dc42430f7b7157010ca0544c1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/0a0d27ed2c28a08dc42430f7b7157010ca0544c1",
-                "reference": "0a0d27ed2c28a08dc42430f7b7157010ca0544c1",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Finder\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Finder Component",
-            "homepage": "https://symfony.com",
-            "time": "2018-09-26T05:38:44+00:00"
-        },
-        {
-            "name": "symfony/polyfill-mbstring",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "c79c051f5b3a46be09205c73b80b346e4153e494"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/c79c051f5b3a46be09205c73b80b346e4153e494",
-                "reference": "c79c051f5b3a46be09205c73b80b346e4153e494",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "suggest": {
-                "ext-mbstring": "For best performance"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.9-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill for the Mbstring extension",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "mbstring",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "time": "2018-09-21T13:07:52+00:00"
-        },
-        {
-            "name": "symfony/process",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/process.git",
-                "reference": "a54c3e0b52d77fa52ce8ada54901f047c62b70e0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/a54c3e0b52d77fa52ce8ada54901f047c62b70e0",
-                "reference": "a54c3e0b52d77fa52ce8ada54901f047c62b70e0",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Process\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Process Component",
-            "homepage": "https://symfony.com",
-            "time": "2018-09-24T07:37:12+00:00"
-        },
-        {
-            "name": "symfony/translation",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/translation.git",
-                "reference": "0c02f5b9d9451a631c0b2df213f95d18bf8ae4b1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/0c02f5b9d9451a631c0b2df213f95d18bf8ae4b1",
-                "reference": "0c02f5b9d9451a631c0b2df213f95d18bf8ae4b1",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/contracts": "^1.0",
-                "symfony/polyfill-mbstring": "~1.0"
-            },
-            "conflict": {
-                "symfony/config": "<3.4",
-                "symfony/dependency-injection": "<3.4",
-                "symfony/yaml": "<3.4"
-            },
-            "provide": {
-                "symfony/translation-contracts-implementation": "1.0"
-            },
-            "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/config": "~3.4|~4.0",
-                "symfony/console": "~3.4|~4.0",
-                "symfony/dependency-injection": "~3.4|~4.0",
-                "symfony/finder": "~2.8|~3.0|~4.0",
-                "symfony/intl": "~3.4|~4.0",
-                "symfony/yaml": "~3.4|~4.0"
-            },
-            "suggest": {
-                "psr/log-implementation": "To use logging capability in translator",
-                "symfony/config": "",
-                "symfony/yaml": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Translation\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Translation Component",
-            "homepage": "https://symfony.com",
-            "time": "2018-09-21T12:51:02+00:00"
-        },
-        {
-            "name": "symfony/yaml",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "07a9881ca56421f7c1a9e5cc5c9042c12188f10a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/07a9881ca56421f7c1a9e5cc5c9042c12188f10a",
-                "reference": "07a9881ca56421f7c1a9e5cc5c9042c12188f10a",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/polyfill-ctype": "~1.8"
-            },
-            "conflict": {
-                "symfony/console": "<3.4"
-            },
-            "require-dev": {
-                "symfony/console": "~3.4|~4.0"
-            },
-            "suggest": {
-                "symfony/console": "For validating YAML files using the lint command"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Yaml Component",
-            "homepage": "https://symfony.com",
-            "time": "2018-09-21T11:02:43+00:00"
-        },
-        {
-            "name": "timitao/behat-symfony-container",
-            "version": "v1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/timiTao/behat-symfony-container.git",
-                "reference": "f6b87583300d2e2a19b35bc66fb741a133684f7e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/timiTao/behat-symfony-container/zipball/f6b87583300d2e2a19b35bc66fb741a133684f7e",
-                "reference": "f6b87583300d2e2a19b35bc66fb741a133684f7e",
-                "shasum": ""
-            },
-            "require": {
-                "behat/behat": "~3.4",
-                "php": ">=5.6",
-                "psr/container": "^1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.3.*",
-                "symfony/process": "~2.1"
-            },
-            "suggest": {
-                "timitao/behat-aggregate-container": "^1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "TimiTao\\BehatSymfonyContainer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tomasz Kunicki"
-                }
-            ],
-            "description": "Allows to declare own services inside Behat loaded by symfony service manager",
-            "time": "2018-07-18T20:40:43+00:00"
-        },
-        {
-            "name": "webmozart/assert",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
-                "reference": "53927dddf3afa2088b355188e143bba42159bf5d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/53927dddf3afa2088b355188e143bba42159bf5d",
-                "reference": "53927dddf3afa2088b355188e143bba42159bf5d",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.3.3 || ^7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.6",
-                "sebastian/version": "^1.0.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Webmozart\\Assert\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bernhard Schussek",
-                    "email": "bschussek@gmail.com"
-                }
-            ],
-            "description": "Assertions to validate method input/output with nice error messages.",
-            "keywords": [
-                "assert",
-                "check",
-                "validate"
-            ],
-            "time": "2018-05-29T14:25:02+00:00"
-        },
-        {
-            "name": "wikimedia/composer-merge-plugin",
-            "version": "v1.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wikimedia/composer-merge-plugin.git",
-                "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
-                "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "composer/composer": "~1.0.0",
-                "jakub-onderka/php-parallel-lint": "~0.8",
-                "phpunit/phpunit": "~4.8|~5.0",
-                "squizlabs/php_codesniffer": "~2.1.0"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3.x-dev"
-                },
-                "class": "Wikimedia\\Composer\\MergePlugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Wikimedia\\Composer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bryan Davis",
-                    "email": "bd808@wikimedia.org"
-                }
-            ],
-            "description": "Composer plugin to merge multiple composer.json files",
-            "time": "2017-04-25T02:31:25+00:00"
+          "name": "Tomasz Kunicki"
         }
-    ],
-    "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "aggrego/domain": 20,
-        "timitao/value-object": 20
+      ],
+      "time": "2018-10-21T20:16:49+00:00"
     },
-    "prefer-stable": false,
-    "prefer-lowest": false,
-    "platform": {
+    {
+      "name": "aggrego/domain",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/Aggrego/Domain.git",
+        "reference": "dc4c54b17e79711dfa6b354f1c98d194f25ff686"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/Aggrego/Domain/zipball/dc4c54b17e79711dfa6b354f1c98d194f25ff686",
+        "reference": "dc4c54b17e79711dfa6b354f1c98d194f25ff686",
+        "shasum": ""
+      },
+      "require": {
+        "aggrego/aggregate-event-consumer": "dev-master",
+        "beberlei/assert": "^3.0",
+        "php": ">=7.1",
+        "ramsey/uuid": "^3.8",
+        "timitao/value-object": "dev-master"
+      },
+      "require-dev": {
+        "behat/behat": "^3.4",
+        "phpspec/phpspec": "^5.0",
+        "timitao/behat-symfony-container": "^1.1",
+        "wikimedia/composer-merge-plugin": "1.4.*"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "Aggrego\\Domain\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "authors": [
+        {
+          "name": "Tomasz Kunicki"
+        }
+      ],
+      "time": "2018-10-21T20:21:46+00:00"
+    },
+    {
+      "name": "aggrego/event-consumer",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/Aggrego/EventConsumer.git",
+        "reference": "682dba24f1cea41793638ee970169e611b05d135"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/Aggrego/EventConsumer/zipball/682dba24f1cea41793638ee970169e611b05d135",
+        "reference": "682dba24f1cea41793638ee970169e611b05d135",
+        "shasum": ""
+      },
+      "require": {
+        "beberlei/assert": "^3.0",
+        "composer/semver": "1.4.*",
+        "php": ">=7.1",
+        "timitao/value-object": "dev-master"
+      },
+      "require-dev": {
+        "phpspec/phpspec": "^5.0",
+        "wikimedia/composer-merge-plugin": "1.4.*"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "Aggrego\\EventConsumer\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "authors": [
+        {
+          "name": "Tomasz Kunicki"
+        }
+      ],
+      "time": "2018-10-21T20:12:43+00:00"
+    },
+    {
+      "name": "beberlei/assert",
+      "version": "v3.1.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/beberlei/assert.git",
+        "reference": "e4f4a40a8739e1151d40fd1ed754a3ed37e1f522"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/beberlei/assert/zipball/e4f4a40a8739e1151d40fd1ed754a3ed37e1f522",
+        "reference": "e4f4a40a8739e1151d40fd1ed754a3ed37e1f522",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7"
+      },
+      "require-dev": {
+        "friendsofphp/php-cs-fixer": "*",
+        "phpstan/phpstan-shim": "*",
+        "phpunit/phpunit": "*"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "Assert\\": "lib/Assert"
+        },
+        "files": [
+          "lib/Assert/functions.php"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-2-Clause"
+      ],
+      "authors": [
+        {
+          "name": "Benjamin Eberlei",
+          "email": "kontakt@beberlei.de",
+          "role": "Lead Developer"
+        },
+        {
+          "name": "Richard Quadling",
+          "email": "rquadling@gmail.com",
+          "role": "Collaborator"
+        }
+      ],
+      "description": "Thin assertion library for input validation in business models.",
+      "keywords": [
+        "assert",
+        "assertion",
+        "validation"
+      ],
+      "time": "2018-10-29T11:13:48+00:00"
+    },
+    {
+      "name": "composer/semver",
+      "version": "1.4.2",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/composer/semver.git",
+        "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/composer/semver/zipball/c7cb9a2095a074d131b65a8a0cd294479d785573",
+        "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^5.3.2 || ^7.0"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "^4.5 || ^5.0.5",
+        "phpunit/phpunit-mock-objects": "2.3.0 || ^3.0"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Composer\\Semver\\": "src"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Nils Adermann",
+          "email": "naderman@naderman.de",
+          "homepage": "http://www.naderman.de"
+        },
+        {
+          "name": "Jordi Boggiano",
+          "email": "j.boggiano@seld.be",
+          "homepage": "http://seld.be"
+        },
+        {
+          "name": "Rob Bast",
+          "email": "rob.bast@gmail.com",
+          "homepage": "http://robbast.nl"
+        }
+      ],
+      "description": "Semver library that offers utilities, version constraint parsing and validation.",
+      "keywords": [
+        "semantic",
+        "semver",
+        "validation",
+        "versioning"
+      ],
+      "time": "2016-08-30T16:08:34+00:00"
+    },
+    {
+      "name": "paragonie/random_compat",
+      "version": "v9.99.99",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/paragonie/random_compat.git",
+        "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+        "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "4.*|5.*",
+        "vimeo/psalm": "^1"
+      },
+      "suggest": {
+        "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+      },
+      "type": "library",
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Paragon Initiative Enterprises",
+          "email": "security@paragonie.com",
+          "homepage": "https://paragonie.com"
+        }
+      ],
+      "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+      "keywords": [
+        "csprng",
+        "polyfill",
+        "pseudorandom",
+        "random"
+      ],
+      "time": "2018-07-02T15:55:56+00:00"
+    },
+    {
+      "name": "ramsey/uuid",
+      "version": "3.x-dev",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/ramsey/uuid.git",
+        "reference": "4c467ce4d5a72c3cf0832c813d4d84d222c3d4bb"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/ramsey/uuid/zipball/4c467ce4d5a72c3cf0832c813d4d84d222c3d4bb",
+        "reference": "4c467ce4d5a72c3cf0832c813d4d84d222c3d4bb",
+        "shasum": ""
+      },
+      "require": {
+        "ext-json": "*",
+        "paragonie/random_compat": "^1.0|^2.0|9.99.99",
+        "php": "^5.4 || ^7.0",
+        "symfony/polyfill-ctype": "^1.8"
+      },
+      "replace": {
+        "rhumsaa/uuid": "self.version"
+      },
+      "require-dev": {
+        "codeception/aspect-mock": "^1.0 | ~2.0.0",
+        "doctrine/annotations": "~1.2.0",
+        "goaop/framework": "1.0.0-alpha.2 | ^1.0 | ~2.1.0",
+        "ircmaxell/random-lib": "^1.1",
+        "jakub-onderka/php-parallel-lint": "^0.9.0",
+        "mockery/mockery": "^0.9.9",
+        "moontoast/math": "^1.1",
+        "php-mock/php-mock-phpunit": "^0.3|^1.1",
+        "phpunit/phpunit": "^4.7|^5.0|^6.5",
+        "squizlabs/php_codesniffer": "^2.3"
+      },
+      "suggest": {
+        "ext-ctype": "Provides support for PHP Ctype functions",
+        "ext-libsodium": "Provides the PECL libsodium extension for use with the SodiumRandomGenerator",
+        "ext-uuid": "Provides the PECL UUID extension for use with the PeclUuidTimeGenerator and PeclUuidRandomGenerator",
+        "ircmaxell/random-lib": "Provides RandomLib for use with the RandomLibAdapter",
+        "moontoast/math": "Provides support for converting UUID to 128-bit integer (in string form).",
+        "ramsey/uuid-console": "A console application for generating UUIDs with ramsey/uuid",
+        "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "3.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Ramsey\\Uuid\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Marijn Huizendveld",
+          "email": "marijn.huizendveld@gmail.com"
+        },
+        {
+          "name": "Thibaud Fabre",
+          "email": "thibaud@aztech.io"
+        },
+        {
+          "name": "Ben Ramsey",
+          "email": "ben@benramsey.com",
+          "homepage": "https://benramsey.com"
+        }
+      ],
+      "description": "Formerly rhumsaa/uuid. A PHP 5.4+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID).",
+      "homepage": "https://github.com/ramsey/uuid",
+      "keywords": [
+        "guid",
+        "identifier",
+        "uuid"
+      ],
+      "time": "2018-08-12T15:49:01+00:00"
+    },
+    {
+      "name": "symfony/polyfill-ctype",
+      "version": "v1.10.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/symfony/polyfill-ctype.git",
+        "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
+        "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=5.3.3"
+      },
+      "suggest": {
+        "ext-ctype": "For best performance"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.9-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Polyfill\\Ctype\\": ""
+        },
+        "files": [
+          "bootstrap.php"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        },
+        {
+          "name": "Gert de Pagter",
+          "email": "BackEndTea@gmail.com"
+        }
+      ],
+      "description": "Symfony polyfill for ctype functions",
+      "homepage": "https://symfony.com",
+      "keywords": [
+        "compatibility",
+        "ctype",
+        "polyfill",
+        "portable"
+      ],
+      "time": "2018-08-06T14:22:27+00:00"
+    },
+    {
+      "name": "timitao/value-object",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/timiTao/ValueObject.git",
+        "reference": "5d6c92324208554e9e920b6ef3ff0f085abf82ee"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/timiTao/ValueObject/zipball/5d6c92324208554e9e920b6ef3ff0f085abf82ee",
+        "reference": "5d6c92324208554e9e920b6ef3ff0f085abf82ee",
+        "shasum": ""
+      },
+      "require": {
+        "beberlei/assert": "^3.0",
         "php": ">=7.1"
+      },
+      "type": "domain",
+      "autoload": {
+        "psr-4": {
+          "TimiTao\\ValueObject\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "authors": [
+        {
+          "name": "Tomasz Kunicki"
+        }
+      ],
+      "time": "2018-09-15T07:32:36+00:00"
+    }
+  ],
+  "packages-dev": [
+    {
+      "name": "doctrine/instantiator",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/doctrine/instantiator.git",
+        "reference": "8c8c1afee0f929f17528fe1721de5d58e15f71c7"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8c8c1afee0f929f17528fe1721de5d58e15f71c7",
+        "reference": "8c8c1afee0f929f17528fe1721de5d58e15f71c7",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.1"
+      },
+      "require-dev": {
+        "doctrine/coding-standard": "^5.0",
+        "ext-pdo": "*",
+        "ext-phar": "*",
+        "phpbench/phpbench": "^0.13",
+        "phpstan/phpstan-shim": "^0.9.2",
+        "phpunit/phpunit": "^7.0"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.2.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Marco Pivetta",
+          "email": "ocramius@gmail.com",
+          "homepage": "http://ocramius.github.com/"
+        }
+      ],
+      "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
+      "homepage": "https://www.doctrine-project.org/projects/instantiator.html",
+      "keywords": [
+        "constructor",
+        "instantiate"
+      ],
+      "time": "2018-10-15T11:30:00+00:00"
     },
-    "platform-dev": []
+    {
+      "name": "phpdocumentor/reflection-common",
+      "version": "1.0.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
+        "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
+        "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=5.5"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "^4.6"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.0.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "phpDocumentor\\Reflection\\": [
+            "src"
+          ]
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Jaap van Otterdijk",
+          "email": "opensource@ijaap.nl"
+        }
+      ],
+      "description": "Common reflection classes used by phpdocumentor to reflect the code structure",
+      "homepage": "http://www.phpdoc.org",
+      "keywords": [
+        "FQSEN",
+        "phpDocumentor",
+        "phpdoc",
+        "reflection",
+        "static analysis"
+      ],
+      "time": "2017-09-11T18:02:19+00:00"
+    },
+    {
+      "name": "phpdocumentor/reflection-docblock",
+      "version": "4.3.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
+        "reference": "94fd0001232e47129dd3504189fa1c7225010d08"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/94fd0001232e47129dd3504189fa1c7225010d08",
+        "reference": "94fd0001232e47129dd3504189fa1c7225010d08",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.0",
+        "phpdocumentor/reflection-common": "^1.0.0",
+        "phpdocumentor/type-resolver": "^0.4.0",
+        "webmozart/assert": "^1.0"
+      },
+      "require-dev": {
+        "doctrine/instantiator": "~1.0.5",
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^6.4"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "4.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "phpDocumentor\\Reflection\\": [
+            "src/"
+          ]
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Mike van Riel",
+          "email": "me@mikevanriel.com"
+        }
+      ],
+      "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
+      "time": "2017-11-30T07:14:17+00:00"
+    },
+    {
+      "name": "phpdocumentor/type-resolver",
+      "version": "0.4.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/phpDocumentor/TypeResolver.git",
+        "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
+        "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^5.5 || ^7.0",
+        "phpdocumentor/reflection-common": "^1.0"
+      },
+      "require-dev": {
+        "mockery/mockery": "^0.9.4",
+        "phpunit/phpunit": "^5.2||^4.8.24"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.0.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "phpDocumentor\\Reflection\\": [
+            "src/"
+          ]
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Mike van Riel",
+          "email": "me@mikevanriel.com"
+        }
+      ],
+      "time": "2017-07-14T14:27:02+00:00"
+    },
+    {
+      "name": "phpspec/php-diff",
+      "version": "v1.1.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/phpspec/php-diff.git",
+        "reference": "0464787bfa7cd13576c5a1e318709768798bec6a"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/phpspec/php-diff/zipball/0464787bfa7cd13576c5a1e318709768798bec6a",
+        "reference": "0464787bfa7cd13576c5a1e318709768798bec6a",
+        "shasum": ""
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.0.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-0": {
+          "Diff": "lib/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "authors": [
+        {
+          "name": "Chris Boulton",
+          "homepage": "http://github.com/chrisboulton"
+        }
+      ],
+      "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
+      "time": "2016-04-07T12:29:16+00:00"
+    },
+    {
+      "name": "phpspec/phpspec",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/phpspec/phpspec.git",
+        "reference": "84ec1b168fb4397c43854c2c7391fb57333cda2c"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/phpspec/phpspec/zipball/84ec1b168fb4397c43854c2c7391fb57333cda2c",
+        "reference": "84ec1b168fb4397c43854c2c7391fb57333cda2c",
+        "shasum": ""
+      },
+      "require": {
+        "doctrine/instantiator": "^1.0.5",
+        "ext-tokenizer": "*",
+        "php": "^7.1, <7.4",
+        "phpspec/php-diff": "^1.0.0",
+        "phpspec/prophecy": "^1.7",
+        "sebastian/exporter": "^1.0 || ^2.0 || ^3.0",
+        "symfony/console": "^3.4 || ^4.0",
+        "symfony/event-dispatcher": "^3.4 || ^4.0",
+        "symfony/finder": "^3.4 || ^4.0",
+        "symfony/process": "^3.4 || ^4.0",
+        "symfony/yaml": "^3.4 || ^4.0"
+      },
+      "require-dev": {
+        "behat/behat": "^3.3",
+        "phpunit/phpunit": "^5.7 || ^6.0",
+        "symfony/filesystem": "^3.4 || ^4.0"
+      },
+      "suggest": {
+        "phpspec/nyan-formatters": "Adds Nyan formatters"
+      },
+      "bin": [
+        "bin/phpspec"
+      ],
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "5.1.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-0": {
+          "PhpSpec": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Konstantin Kudryashov",
+          "email": "ever.zet@gmail.com",
+          "homepage": "http://everzet.com"
+        },
+        {
+          "name": "Marcello Duarte",
+          "homepage": "http://marcelloduarte.net/"
+        },
+        {
+          "name": "Ciaran McNulty",
+          "homepage": "https://ciaranmcnulty.com/"
+        }
+      ],
+      "description": "Specification-oriented BDD framework for PHP 7.1+",
+      "homepage": "http://phpspec.net/",
+      "keywords": [
+        "BDD",
+        "SpecBDD",
+        "TDD",
+        "spec",
+        "specification",
+        "testing",
+        "tests"
+      ],
+      "time": "2018-11-12T16:11:00+00:00"
+    },
+    {
+      "name": "phpspec/prophecy",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/phpspec/prophecy.git",
+        "reference": "3660b2eed90abdf92ac2e9dae9a238d2701bfa77"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/phpspec/prophecy/zipball/3660b2eed90abdf92ac2e9dae9a238d2701bfa77",
+        "reference": "3660b2eed90abdf92ac2e9dae9a238d2701bfa77",
+        "shasum": ""
+      },
+      "require": {
+        "doctrine/instantiator": "^1.0.2",
+        "php": "^5.3|^7.0",
+        "phpdocumentor/reflection-docblock": "^2.0|^3.0.2|^4.0",
+        "sebastian/comparator": "^1.1|^2.0|^3.0",
+        "sebastian/recursion-context": "^1.0|^2.0|^3.0"
+      },
+      "require-dev": {
+        "phpspec/phpspec": "^2.5|^3.2",
+        "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5 || ^7.1"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.8.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-0": {
+          "Prophecy\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Konstantin Kudryashov",
+          "email": "ever.zet@gmail.com",
+          "homepage": "http://everzet.com"
+        },
+        {
+          "name": "Marcello Duarte",
+          "email": "marcello.duarte@gmail.com"
+        }
+      ],
+      "description": "Highly opinionated mocking framework for PHP 5.3+",
+      "homepage": "https://github.com/phpspec/prophecy",
+      "keywords": [
+        "Double",
+        "Dummy",
+        "fake",
+        "mock",
+        "spy",
+        "stub"
+      ],
+      "time": "2018-11-04T18:50:11+00:00"
+    },
+    {
+      "name": "sebastian/comparator",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/sebastianbergmann/comparator.git",
+        "reference": "71bdaddd52ddb753a144c78289f21abb719aebc4"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/71bdaddd52ddb753a144c78289f21abb719aebc4",
+        "reference": "71bdaddd52ddb753a144c78289f21abb719aebc4",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.1",
+        "sebastian/diff": "^3.0",
+        "sebastian/exporter": "^3.1"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "^7.1"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "3.0-dev"
+        }
+      },
+      "autoload": {
+        "classmap": [
+          "src/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "authors": [
+        {
+          "name": "Jeff Welch",
+          "email": "whatthejeff@gmail.com"
+        },
+        {
+          "name": "Volker Dusch",
+          "email": "github@wallbash.com"
+        },
+        {
+          "name": "Bernhard Schussek",
+          "email": "bschussek@2bepublished.at"
+        },
+        {
+          "name": "Sebastian Bergmann",
+          "email": "sebastian@phpunit.de"
+        }
+      ],
+      "description": "Provides the functionality to compare PHP values for equality",
+      "homepage": "https://github.com/sebastianbergmann/comparator",
+      "keywords": [
+        "comparator",
+        "compare",
+        "equality"
+      ],
+      "time": "2018-10-30T05:42:23+00:00"
+    },
+    {
+      "name": "sebastian/diff",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/sebastianbergmann/diff.git",
+        "reference": "6906fbe33455221909eab31d4b8b1517b94aba46"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/6906fbe33455221909eab31d4b8b1517b94aba46",
+        "reference": "6906fbe33455221909eab31d4b8b1517b94aba46",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.1"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "^7.0",
+        "symfony/process": "^2 || ^3.3 || ^4"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "3.0-dev"
+        }
+      },
+      "autoload": {
+        "classmap": [
+          "src/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "authors": [
+        {
+          "name": "Kore Nordmann",
+          "email": "mail@kore-nordmann.de"
+        },
+        {
+          "name": "Sebastian Bergmann",
+          "email": "sebastian@phpunit.de"
+        }
+      ],
+      "description": "Diff implementation",
+      "homepage": "https://github.com/sebastianbergmann/diff",
+      "keywords": [
+        "diff",
+        "udiff",
+        "unidiff",
+        "unified diff"
+      ],
+      "time": "2018-10-30T05:42:15+00:00"
+    },
+    {
+      "name": "sebastian/exporter",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/sebastianbergmann/exporter.git",
+        "reference": "c8c4f196e32858e4448bc285e542b61a4c40d9dc"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/c8c4f196e32858e4448bc285e542b61a4c40d9dc",
+        "reference": "c8c4f196e32858e4448bc285e542b61a4c40d9dc",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.0",
+        "sebastian/recursion-context": "^3.0"
+      },
+      "require-dev": {
+        "ext-mbstring": "*",
+        "phpunit/phpunit": "^6.0"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "3.1.x-dev"
+        }
+      },
+      "autoload": {
+        "classmap": [
+          "src/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "authors": [
+        {
+          "name": "Jeff Welch",
+          "email": "whatthejeff@gmail.com"
+        },
+        {
+          "name": "Volker Dusch",
+          "email": "github@wallbash.com"
+        },
+        {
+          "name": "Bernhard Schussek",
+          "email": "bschussek@2bepublished.at"
+        },
+        {
+          "name": "Sebastian Bergmann",
+          "email": "sebastian@phpunit.de"
+        },
+        {
+          "name": "Adam Harvey",
+          "email": "aharvey@php.net"
+        }
+      ],
+      "description": "Provides the functionality to export PHP variables for visualization",
+      "homepage": "http://www.github.com/sebastianbergmann/exporter",
+      "keywords": [
+        "export",
+        "exporter"
+      ],
+      "time": "2018-06-28T14:22:04+00:00"
+    },
+    {
+      "name": "sebastian/recursion-context",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/sebastianbergmann/recursion-context.git",
+        "reference": "dbe1869c13935c6080c834fc61424834b9ad5907"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/dbe1869c13935c6080c834fc61424834b9ad5907",
+        "reference": "dbe1869c13935c6080c834fc61424834b9ad5907",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.0"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "^6.0"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "3.0.x-dev"
+        }
+      },
+      "autoload": {
+        "classmap": [
+          "src/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "authors": [
+        {
+          "name": "Jeff Welch",
+          "email": "whatthejeff@gmail.com"
+        },
+        {
+          "name": "Sebastian Bergmann",
+          "email": "sebastian@phpunit.de"
+        },
+        {
+          "name": "Adam Harvey",
+          "email": "aharvey@php.net"
+        }
+      ],
+      "description": "Provides functionality to recursively process PHP variables",
+      "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
+      "time": "2018-05-15T05:52:05+00:00"
+    },
+    {
+      "name": "symfony/console",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/symfony/console.git",
+        "reference": "f75de4cb9e4376c09e600a30174fefad9daa2272"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/symfony/console/zipball/f75de4cb9e4376c09e600a30174fefad9daa2272",
+        "reference": "f75de4cb9e4376c09e600a30174fefad9daa2272",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.1.3",
+        "symfony/contracts": "^1.0",
+        "symfony/polyfill-mbstring": "~1.0"
+      },
+      "conflict": {
+        "symfony/dependency-injection": "<3.4",
+        "symfony/process": "<3.3"
+      },
+      "require-dev": {
+        "psr/log": "~1.0",
+        "symfony/config": "~3.4|~4.0",
+        "symfony/dependency-injection": "~3.4|~4.0",
+        "symfony/event-dispatcher": "~3.4|~4.0",
+        "symfony/lock": "~3.4|~4.0",
+        "symfony/process": "~3.4|~4.0"
+      },
+      "suggest": {
+        "psr/log-implementation": "For using the console logger",
+        "symfony/event-dispatcher": "",
+        "symfony/lock": "",
+        "symfony/process": ""
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "4.2-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\Console\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Symfony Console Component",
+      "homepage": "https://symfony.com",
+      "time": "2018-11-15T12:17:10+00:00"
+    },
+    {
+      "name": "symfony/contracts",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/symfony/contracts.git",
+        "reference": "4a33574d5771f4b04334cd4f7d43de96a92efb62"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/symfony/contracts/zipball/4a33574d5771f4b04334cd4f7d43de96a92efb62",
+        "reference": "4a33574d5771f4b04334cd4f7d43de96a92efb62",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.1.3"
+      },
+      "require-dev": {
+        "psr/cache": "^1.0",
+        "psr/container": "^1.0"
+      },
+      "suggest": {
+        "psr/cache": "When using the Cache contracts",
+        "psr/container": "When using the Service contracts",
+        "symfony/cache-contracts-implementation": "",
+        "symfony/service-contracts-implementation": "",
+        "symfony/translation-contracts-implementation": ""
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.0-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Contracts\\": ""
+        },
+        "exclude-from-classmap": [
+          "**/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Nicolas Grekas",
+          "email": "p@tchwork.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "A set of abstractions extracted out of the Symfony components",
+      "homepage": "https://symfony.com",
+      "keywords": [
+        "abstractions",
+        "contracts",
+        "decoupling",
+        "interfaces",
+        "interoperability",
+        "standards"
+      ],
+      "time": "2018-10-31T08:00:32+00:00"
+    },
+    {
+      "name": "symfony/event-dispatcher",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/symfony/event-dispatcher.git",
+        "reference": "d39d7a05414c4462abd8c077322b4811549f705c"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/d39d7a05414c4462abd8c077322b4811549f705c",
+        "reference": "d39d7a05414c4462abd8c077322b4811549f705c",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.1.3",
+        "symfony/contracts": "^1.0"
+      },
+      "conflict": {
+        "symfony/dependency-injection": "<3.4"
+      },
+      "require-dev": {
+        "psr/log": "~1.0",
+        "symfony/config": "~3.4|~4.0",
+        "symfony/dependency-injection": "~3.4|~4.0",
+        "symfony/expression-language": "~3.4|~4.0",
+        "symfony/stopwatch": "~3.4|~4.0"
+      },
+      "suggest": {
+        "symfony/dependency-injection": "",
+        "symfony/http-kernel": ""
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "4.2-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\EventDispatcher\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Symfony EventDispatcher Component",
+      "homepage": "https://symfony.com",
+      "time": "2018-11-11T19:52:12+00:00"
+    },
+    {
+      "name": "symfony/finder",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/symfony/finder.git",
+        "reference": "e53d477d7b5c4982d0e1bfd2298dbee63d01441d"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/symfony/finder/zipball/e53d477d7b5c4982d0e1bfd2298dbee63d01441d",
+        "reference": "e53d477d7b5c4982d0e1bfd2298dbee63d01441d",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.1.3"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "4.2-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\Finder\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Symfony Finder Component",
+      "homepage": "https://symfony.com",
+      "time": "2018-11-11T19:52:12+00:00"
+    },
+    {
+      "name": "symfony/polyfill-mbstring",
+      "version": "v1.10.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/symfony/polyfill-mbstring.git",
+        "reference": "c79c051f5b3a46be09205c73b80b346e4153e494"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/c79c051f5b3a46be09205c73b80b346e4153e494",
+        "reference": "c79c051f5b3a46be09205c73b80b346e4153e494",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=5.3.3"
+      },
+      "suggest": {
+        "ext-mbstring": "For best performance"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.9-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Polyfill\\Mbstring\\": ""
+        },
+        "files": [
+          "bootstrap.php"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Nicolas Grekas",
+          "email": "p@tchwork.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Symfony polyfill for the Mbstring extension",
+      "homepage": "https://symfony.com",
+      "keywords": [
+        "compatibility",
+        "mbstring",
+        "polyfill",
+        "portable",
+        "shim"
+      ],
+      "time": "2018-09-21T13:07:52+00:00"
+    },
+    {
+      "name": "symfony/process",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/symfony/process.git",
+        "reference": "3665ff1c2c82263a3c281219e13c8a9cea37cd9a"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/symfony/process/zipball/3665ff1c2c82263a3c281219e13c8a9cea37cd9a",
+        "reference": "3665ff1c2c82263a3c281219e13c8a9cea37cd9a",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.1.3"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "4.2-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\Process\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Symfony Process Component",
+      "homepage": "https://symfony.com",
+      "time": "2018-11-11T19:52:12+00:00"
+    },
+    {
+      "name": "symfony/yaml",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/symfony/yaml.git",
+        "reference": "c41175c801e3edfda90f32e292619d10c27103d7"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/symfony/yaml/zipball/c41175c801e3edfda90f32e292619d10c27103d7",
+        "reference": "c41175c801e3edfda90f32e292619d10c27103d7",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^7.1.3",
+        "symfony/polyfill-ctype": "~1.8"
+      },
+      "conflict": {
+        "symfony/console": "<3.4"
+      },
+      "require-dev": {
+        "symfony/console": "~3.4|~4.0"
+      },
+      "suggest": {
+        "symfony/console": "For validating YAML files using the lint command"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "4.2-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Symfony\\Component\\Yaml\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Fabien Potencier",
+          "email": "fabien@symfony.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Symfony Yaml Component",
+      "homepage": "https://symfony.com",
+      "time": "2018-11-11T19:52:12+00:00"
+    },
+    {
+      "name": "webmozart/assert",
+      "version": "dev-master",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/webmozart/assert.git",
+        "reference": "53927dddf3afa2088b355188e143bba42159bf5d"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/webmozart/assert/zipball/53927dddf3afa2088b355188e143bba42159bf5d",
+        "reference": "53927dddf3afa2088b355188e143bba42159bf5d",
+        "shasum": ""
+      },
+      "require": {
+        "php": "^5.3.3 || ^7.0"
+      },
+      "require-dev": {
+        "phpunit/phpunit": "^4.6",
+        "sebastian/version": "^1.0.1"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.3-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Webmozart\\Assert\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Bernhard Schussek",
+          "email": "bschussek@gmail.com"
+        }
+      ],
+      "description": "Assertions to validate method input/output with nice error messages.",
+      "keywords": [
+        "assert",
+        "check",
+        "validate"
+      ],
+      "time": "2018-05-29T14:25:02+00:00"
+    },
+    {
+      "name": "wikimedia/composer-merge-plugin",
+      "version": "v1.4.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/wikimedia/composer-merge-plugin.git",
+        "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
+        "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
+        "shasum": ""
+      },
+      "require": {
+        "composer-plugin-api": "^1.0",
+        "php": ">=5.3.2"
+      },
+      "require-dev": {
+        "composer/composer": "~1.0.0",
+        "jakub-onderka/php-parallel-lint": "~0.8",
+        "phpunit/phpunit": "~4.8|~5.0",
+        "squizlabs/php_codesniffer": "~2.1.0"
+      },
+      "type": "composer-plugin",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "1.3.x-dev"
+        },
+        "class": "Wikimedia\\Composer\\MergePlugin"
+      },
+      "autoload": {
+        "psr-4": {
+          "Wikimedia\\Composer\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Bryan Davis",
+          "email": "bd808@wikimedia.org"
+        }
+      ],
+      "description": "Composer plugin to merge multiple composer.json files",
+      "time": "2017-04-25T02:31:25+00:00"
+    }
+  ],
+  "aliases": [],
+  "minimum-stability": "dev",
+  "stability-flags": {
+    "aggrego/domain": 20,
+    "timitao/value-object": 20
+  },
+  "prefer-stable": false,
+  "prefer-lowest": false,
+  "platform": {
+    "php": ">=7.1"
+  },
+  "platform-dev": []
 }
